@@ -1,21 +1,13 @@
-<!DOCTYPE html-->
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    <title>Rolex Watches</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
+{ {% extends "base.html" %} }
 
-<body>
-    <header class = "rolex-header">
-        <h1> 
-            Rolex
-        </h1>
-    </header>
-    
-    <main>
-        <h2> Coming Soon! </h2>
-    </main>
-</body>
-</html>
+{% block title %} Rolex {% endblock %}
+
+{% block content %}
+<header class = "rolex-header">
+    <h1>
+        <img> <img>
+        Rolex
+    </h1>
+</header>
+
+{%  endblock %}

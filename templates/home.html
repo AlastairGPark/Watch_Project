@@ -38,7 +38,7 @@
         <li> 
             <a href="#" class = "brand-toggle"> Shop by Brand </a>
             <ul class="Brandsubmenu">
-                <li> <a href="{{ url_for('rolex') }}"> Rolex </a> </li>
+                <li> <a href="{{ url_for('Rolex') }}"> Rolex </a> </li>
                 <li> <a href="#"> Audemars Piguet </a> </li>
                 <li> <a href="#"> Ulysse Nardin </a> </li>
                 <li> <a href="#"> Tag Heuer </a> </li>
@@ -49,6 +49,11 @@
         <li> <a href = "#"> Shop by Material </a> </li>
         <li> <a href = "#"> Shop by Size </a> </li>
         <li> <a href = "#"> Shop by Style </a> </li>
+    </ul>
+    <ul>
+        <li class = "home-button">
+            <a href = "{{ url_for('home') }}"> Back to Home </a>
+        </li>
     </ul>
 </div> 
 

@@ -60,6 +60,7 @@ p {
     color: white;
     transition: left 0.3s ease;
     padding-top: 100px; /* Space for menu items */
+    z-index: 1000;
 }
 
 .side-menu ul {
@@ -222,6 +223,21 @@ p {
 
 .Brandsubmenu li:nth-child(6) {
     transition-delay: 1.1s;
+}
+
+
+.side-menu .home-button {
+    position: fixed;
+    bottom: 0;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    margin-top: auto;
+}
+
+.side-menu .home-button a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 
