@@ -1,68 +1,14 @@
-<!-- Home Page Template -->
+{% extends "base.html" %}
 
-<!DOCTYPE html>
+{% block title %} (Temp Name) {% endblock %}
 
-<head>
-    <meta charset = "UTF-8">
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
 
-    <title> Watch Collection Home </title>
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/styles.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-
-
-<body>
-    <header>
-        <div id = "hamburger" class = "hamburger" onclick = "togglemenu()">
-            <i class = "fas fa-bars"> </i>
-        </div>
-        <h1> Watch Collection </h1>
-        <div class = "nav-buttons">
-            <a href = "/search"> Search
-                <i class = "fas fa-search"> </i>
-            </a>
-            <a href = "/favourites"> Favourites
-                <i class = "fas fa-heart"> </i>
-            </a>
-        </div>
-    </header>
-
-    
-<!-- Side Menu -->
-<div id = "sidemenu" class = "side-menu">
-    <!-- Close Menu -->
-    <span class = "close-btn" onclick = "togglemenu()">
-        <i class = "fas fa-times"> </i>
-    </span>
-    <ul>
-        <li> 
-            <a href="#" class = "brand-toggle"> Shop by Brand </a>
-            <ul class="Brandsubmenu">
-                <li> <a href="{{ url_for('Rolex') }}"> Rolex </a> </li>
-                <li> <a href="#"> Audemars Piguet </a> </li>
-                <li> <a href="#"> Ulysse Nardin </a> </li>
-                <li> <a href="#"> Tag Heuer </a> </li>
-                <li> <a href="#"> Zenith </a> </li>
-                <li> <a href="#"> All Brands </a> </li>
-            </ul>
-        </li>
-        <li> <a href = "#"> Shop by Material </a> </li>
-        <li> <a href = "#"> Shop by Size </a> </li>
-        <li> <a href = "#"> Shop by Style </a> </li>
-    </ul>
-    <ul>
-        <li class = "home-button">
-            <a href = "{{ url_for('home') }}"> Back to Home </a>
-        </li>
-    </ul>
-</div> 
-
-
-    <main>
-        <h2> Welcome to The Home Page </h2>
-
-        <p> Coming Soon </p>
-    </main>
-<script src = "static/js/scripts.js"></script>
-</body>
-</html>
+{% block subheader %}
+    <div class="subheader">
+        <h2> Welcome to (Temp Name) </h2>
+    </div>
+{% endblock %}

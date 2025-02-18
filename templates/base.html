@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Dynamic Title: Changes based on the Brand -->
-    <title> 
-        {% block title %} 
-            {% if brand_name %} 
-                {{ brand_name }} Watches 
-            {% endif %} 
-        {% endblock %} 
-    </title>
-
-    <!-- CSS and Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>{% block title %} Watch Collection {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/rolex.css') }}">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    {% block head %}{% endblock %}
 </head>
-
-<body class="{% if brand_name %}brand-page{% endif %}">
-    
-    {% block header %}
+<body>
+    <!-- Standard Header with Navigation Buttons -->
     <header>
         <div id="hamburger" class="hamburger" onclick="togglemenu()">
             <i class="fas fa-bars"></i>
         </div>
+
+        <!-- Side Menu -->
+        <div class="side-menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#">Browse Brands</a>
+                    <ul class="submenu">
+                        <li><a href="/Rolex"> Rolex </a></li>
+                        <li><a href="/AudemarsPiguet"> Audemars Piguet </a></li>
+                        <li><a href="/VacheronConstantin"> Vacheron Constantin </a></li>
+                        <li><a href="/Tudor"> Tudor </a></li>
+                        <li><a href="/UlysseNardin"> Ulysse Nardin </a></li>
+                        <li><a href="Brands"> All Brands </a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Browse Materials</a>
+                    <ul class="submenu">
+                        <li><a href="#"> Gold </a></li>
+                        <li><a href="#"> Ceramic </a></li>
+                        <li><a href="#"> Stainless Steel </a></li>
+                        <li><a href="#"> All Materials </a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#"> Browse Case Sizes </a>
+                    <ul class="submenu">
+                        <li><a href="#"> 36mm </a></li>
+                        <li><a href="#"> 40mm </a></li>
+                        <li><a href="#"> 42mm </a></li>
+                        <li><a href="#"> All Case Sizes </a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Browse Complications</a>
+                    <ul class="submenu">
+                        <li><a href="#"> Date </a></li>
+                        <li><a href="#"> Chronograph </a></li>
+                        <li><a href="#"> Dive </a></li>
+                        <li><a href="#"> All Complications </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <a href = "/" class = "home-btn">
+            <h1> Watch Collection </h1>
+        </a>
+
         <div class="nav-buttons">
             <a href="/search"> Search
                 <i class="fas fa-search"></i>
@@ -36,50 +74,19 @@
             </a>
         </div>
     </header>
+
+    <!-- Page Specific Subheader -->
+    {% block subheader %}
+    <div class="subheader">
+        <p> Welcome to Watch Collection Home </p>
+    </div>
     {% endblock %}
 
-    <!-- Side Menu -->
-    <div id="sidemenu" class="side-menu">
-        <!-- Close Menu -->
-        <span class="close-btn" onclick="togglemenu()">
-            <i class="fas fa-times"></i>
-        </span>
-        <ul>
-            <li> 
-                <a href="#" class="brand-toggle"> Shop by Brand </a>
-                <ul class="Brandsubmenu">
-                    <li> <a href="{{ url_for('brand_page', brand_name='Rolex') }}"> Rolex </a> </li>
-                    <li> <a href="{{ url_for('brand_page', brand_name='Audemars Piguet') }}"> Audemars Piguet </a> </li>
-                    <li> <a href="{{ url_for('brand_page', brand_name='Ulysse Nardin') }}"> Ulysse Nardin </a> </li>
-                    <li> <a href="{{ url_for('brand_page', brand_name='Tag Heuer') }}"> Tag Heuer </a> </li>
-                    <li> <a href="{{ url_for('brand_page', brand_name='Zenith') }}"> Zenith </a> </li>
-                    <li> <a href="{{ url_for('brand_page', brand_name='All Brands') }}"> All Brands </a> </li>
-                </ul>
-            </li>
-            <li> <a href="#"> Shop by Material </a> </li>
-            <li> <a href="#"> Shop by Size </a> </li>
-            <li> <a href="#"> Shop by Style </a> </li>
-        </ul>
-    </div> 
+    <!-- Page Content -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
 
-    <main>
-        <!-- Dynamic Heading and Content -->
-        <h2> {{ brand_name }} </h2>
-        
-        {% block back_home_button %}
-        <!-- 'Back to Home' Button Block -->
-        <a href="{{ url_for('home') }}" class="home-button">
-            Back to Home
-        </a>
-        {% endblock %}
-        
-        <!-- Main Content Block -->
-        {% block content %} 
-        <!-- Page-specific content will be injected here -->
-        {% endblock %}
-    </main>
-
-    <!-- JavaScript -->
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>

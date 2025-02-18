@@ -29,6 +29,26 @@ def search():
 def Rolex():
     return render_template('brands/rolex.html')
 
+@app.route('/AudemarsPiguet')
+def AudemarsPiguet():
+    return render_template('brands/ap.html')
+
+@app.route('/VacheronConstantin')
+def VacheronConstantin():
+    return render_template('brands/vc.html')
+
+@app.route('/Tudor')
+def Tudor():
+    return render_template('brands/tudor.html')
+
+@app.route('/UlysseNardin')
+def UlysseNardin():
+    return render_template('brands/un.html')
+
+@app.route('/brand/<brand_name>')
+def brand_page(brand_name):
+    return render_template('brand.html', brand_name=brand_name)
+
 
 if __name__ == '__main__':
     app.run(debug = True)
