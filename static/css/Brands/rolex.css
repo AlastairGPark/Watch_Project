@@ -3,6 +3,7 @@
     color: white;
     background-color: #006039;
     color: yellow;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -56,18 +57,18 @@
     background-color: transparent;
     cursor: pointer;
     vertical-align: middle;
+    transition: all 0.3s ease; /* Smooth transition for hover */
 }
 
+/* Change the box's color when active or hovered */
 .filter-box.active {
     background-color: yellow;
     border-color: yellow;
 }
 
-/* Hover effect for text */
-.filter-text:hover {
+/* Hover effect for both the filter box and text when either is hovered */
+.filter-btn:hover .filter-text,
+.filter-btn:hover .filter-box {
     color: yellow;
-}
-
-.filter-box:hover {
-    color: yellow;
+    border-color: yellow;
 }
