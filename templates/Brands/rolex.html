@@ -12,3 +12,45 @@
         <h2> Rolex </h2>
     </div>
 {% endblock %}
+
+{% block content %}
+    <div class="model-filter-list-sidebar">
+        <ul>
+            <li class="menu-title"> Models: </li>
+            <ul class="filter-submenu">
+                <li>
+                    <button class="filter-btn" data-filter="daytona">
+                        <span class="filter-box"></span>
+                        <span class="filter-text">Daytona</span>                        
+                    </button>
+                </li>
+                <li>
+                    <button class="filter-btn" data-filter="daydate">
+                        <span class="filter-box"></span>
+                        <span class="filter-text">Daydate</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="filter-btn" data-filter="yachmaster">
+                        <span class="filter-box"></span>
+                        <span class="filter-text">Yachmaster</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="filter-btn" data-filter="gmt">
+                        <span class="filter-box"></span>
+                        <span class="filter-text">GMT Master II</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="filter-btn" data-filter="allmodels">
+                        <span class="filter-box"></span>
+                        <span class="filter-text">All Models</span>
+                    </button>
+                </li>
+            </ul>
+        </ul>
+    </div>
+{% endblock %}
+
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>

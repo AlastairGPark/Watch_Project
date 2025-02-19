@@ -1,6 +1,73 @@
 /* rolex.css */
 .subheader {
-    color: white;              /* Text color for h2 within .subheader */
-    background-color: #006039; /* Background color */
+    color: white;
+    background-color: #006039;
+    color: yellow;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-title {
+    font-size: 18px;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 5px;
+    text-decoration: underline;
+    color: white;
+}
+
+.model-filter-list-sidebar {
+    position: fixed;
+    top: 201px;
+    width: 225px;
+    height: 100%;
+    background-color: #006039;
+    padding-top: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.model-filter-list-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Make the button content (text and box) the only clickable area */
+.filter-btn {
+    background: transparent; /* Remove button background */
+    border: none; /* Remove button border */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 15px;
+    width: auto; /* Make button size fit content */
+    margin: 5px 0; /* Add margin to separate buttons */
+}
+
+.filter-text {
+    color: white;
+    margin-left: 10px; /* Space between text and box */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.filter-box {
+    width: 8px;
+    height: 8px;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.filter-box.active {
+    background-color: yellow;
+    border-color: yellow;
+}
+
+/* Hover effect for text */
+.filter-text:hover {
+    color: yellow;
+}
+
+.filter-box:hover {
     color: yellow;
 }
