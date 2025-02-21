@@ -1,4 +1,4 @@
-/* rolex.css */
+/* Overriding the standard subheader from styles.css to match the relevant page */
 .subheader {
     color: white;
     background-color: #006039;
@@ -7,18 +7,21 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Styling the title of each submenu */
 .menu-title {
     font-size: 18px;
     list-style-type: none;
     text-align: left;
+    padding-top: 10px;
     padding-left: 5px;
     text-decoration: underline;
     color: white;
 }
 
+/* Styling the sidebar */
 .model-filter-list-sidebar {
     position: fixed;
-    top: 201px;
+    top: 200px;
     width: 225px;
     height: 100%;
     background-color: #006039;
@@ -26,13 +29,14 @@
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Removing standard list styling */
 .model-filter-list-sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-/* Make the button content (text and box) the only clickable area */
+/* Making the filter buttons only clickable on the text */
 .filter-btn {
     background: transparent; /* Remove button background */
     border: none; /* Remove button border */
@@ -44,12 +48,15 @@
     margin: 5px 0; /* Add margin to separate buttons */
 }
 
+/* Styling text */
 .filter-text {
     color: white;
     margin-left: 10px; /* Space between text and box */
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
+
+/* Styling filter boxes */
 .filter-box {
     width: 8px;
     height: 8px;
@@ -59,16 +66,23 @@
     vertical-align: middle;
     transition: all 0.3s ease; /* Smooth transition for hover */
 }
-
-/* Change the box's color when active or hovered */
+/* Colour change for active filters */
 .filter-box.active {
     background-color: yellow;
     border-color: yellow;
 }
 
-/* Hover effect for both the filter box and text when either is hovered */
+/* Styles for all of the "All ___" at the bottom of each section */
+.moreoptions {
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: pink;
+}
+
+/* Hover colour for all filters */
 .filter-btn:hover .filter-text,
-.filter-btn:hover .filter-box {
+.filter-btn:hover .filter-box,
+.moreoptions:hover {
     color: yellow;
     border-color: yellow;
 }

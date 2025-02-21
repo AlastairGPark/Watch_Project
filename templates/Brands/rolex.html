@@ -16,6 +16,8 @@
 {% block content %}
     <div class = "model-filter-list-sidebar">
         <ul>
+
+            <!-- Models Section -->
             <li class = "menu-title"> Models: </li>
             <ul class = "filter-submenu">
                 <li>
@@ -44,11 +46,45 @@
                 </li>
                 <li>
                     <button class = "filter-btn" data-filter = "allmodels">
-                        <span class = "filter-box"> </span>
-                        <span class = "filter-text"> All Models </span>
+                        <span class = "moreoptions"> All Models </span>
                     </button>
                 </li>
             </ul>
+
+            <!-- Materials Section -->
+            <li class = "menu-title"> Materials </li>
+                <ul id = "filter-submenu">
+                    <li>
+                        <button class = "filter-btn" data-filter = "oystersteel">
+                            <span class = "filter-box"> </span>
+                            <span class = "filter-text"> Oystersteel </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class = "filter-btn" datafilter = "yellowgold">
+                            <span class = "filter-box"> </span>
+                            <span class = "filter-text"> Yellow Gold </span>
+                        </button>
+                    <li>
+                        <button class = "filter-btn" datafilter = "platinum">
+                            <span class = "filter-box"> </span>
+                            <span class = "filter-text"> Platinum </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class = "filter-btn" datafilter = "allmaterials">
+                            <span class = "moreoptions"> All Materials </span>
+                        </button>
+                    </li>
+
+                <!-- Case Size 2 way slider Slider -->
+                    <li class = "menu-title"> Case Size </li>
+                
+
+                <!-- Prices Section -->
+
+                <!-- Prices Search -->
+
         </ul>
     </div>
 {% endblock %}
