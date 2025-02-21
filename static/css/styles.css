@@ -10,7 +10,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 25px 25px;
+    padding: 24px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,7 @@ header {
 
 /* Subheader styling for all pages */
 .subheader {
+    position: relative;
     background-color: #f8f8f8;
     padding: 10px 20px;
     font-size: 18px;
@@ -29,6 +30,7 @@ header {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    z-index: 5;
 }
 
 
@@ -79,6 +81,7 @@ header {
     color: white;
     box-shadow: none;
     transition: left 0.3s ease;
+    z-index: 2;
 }
 
 /* When the side menu is open */
