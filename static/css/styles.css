@@ -81,7 +81,7 @@ header {
     color: white;
     box-shadow: none;
     transition: left 0.3s ease;
-    z-index: 2;
+    z-index: 10;
 }
 
 /* When the side menu is open */

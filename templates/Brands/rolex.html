@@ -11,102 +11,19 @@
     <div class="subheader">
         <h2> Rolex </h2>
     </div>
-{% endblock %}
 
-{% block content %}
-    <div class = "model-filter-list-sidebar">
-        <ul>
-
-            <!-- Models Section -->
-            <li class = "menu-title"> Models: </li>
-            <ul class = "filter-submenu">
-                <li>
-                    <button class = "filter-btn" data-filter = "daytona">
-                        <span class = "filter-box"> </span>
-                        <span class = "filter-text"> Daytona </span>                        
-                    </button>
-                </li>
-                <li>
-                    <button class = "filter-btn" data-filter = "daydate">
-                        <span class = "filter-box"> </span>
-                        <span class = "filter-text"> Daydate </span>
-                    </button>
-                </li>
-                <li>
-                    <button class = "filter-btn" data-filter = "yachtmaster">
-                        <span class = "filter-box"> </span>
-                        <span class = "filter-text"> Yachtmaster </span>
-                    </button>
-                </li>
-                <li>
-                    <button class = "filter-btn" data-filter = "gmt">
-                        <span class = "filter-box"> </span>
-                        <span class = "filter-text"> GMT Master II </span>
-                    </button>
-                </li>
-                <li>
-                    <button class = "filter-btn" data-filter = "allmodels">
-                        <span class = "moreoptions"> All Models </span>
-                    </button>
-                </li>
-            </ul>
-
-            <!-- Materials Section -->
-            <li class = "menu-title"> Materials </li>
-                <ul id = "filter-submenu">
-                    <li>
-                        <button class = "filter-btn" data-filter = "oystersteel">
-                            <span class = "filter-box"> </span>
-                            <span class = "filter-text"> Oystersteel </span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class = "filter-btn" datafilter = "yellowgold">
-                            <span class = "filter-box"> </span>
-                            <span class = "filter-text"> Yellow Gold </span>
-                        </button>
-                    <li>
-                        <button class = "filter-btn" datafilter = "platinum">
-                            <span class = "filter-box"> </span>
-                            <span class = "filter-text"> Platinum </span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class = "filter-btn" datafilter = "allmaterials">
-                            <span class = "moreoptions"> All Materials </span>
-                        </button>
-                    </li>
-
-                <!-- Case Size 2 way slider Slider -->
-                    <li class = "menu-title"> Case Size </li>
-                
-
-                <!-- Prices Section -->
-                    <li class = "menu-title"> Price </li>
-                <!-- Prices Search -->
-
-
-                <!-- Style Section -->
-                <li class = "menu-title"> Style </li>
-
-
-                <!-- Complications Section -->
-                <li class = "menu-title"> Complications </li>
-
-
-                <!-- Dial Colour Section -->
-                <li class = "menu-title"> Dial Colour </li>
-
-
-                <!-- Bracelet Style Section -->
-                <li class = "menu-title"> Bracelet Style </li>
-
-
-                <!-- Exclusivity Section -->
-                <li class = "menu-title"> Exclusivity </li>
-
-        </ul>
+    <div class = "model-grid">
+        <a href = "/Rolex/Daytona" class = "model-button"> Daytona </a>
+        <a href = "/Rolex/Daydate" class = "model-button"> Daydate </a>
+        <a href = "/Rolex/Datejust" class = "model-button"> Datejust </a>
+        <a href = "/Rolex/Yacht_Master" class = "model-button"> Yachtmaster </a>
+        <a href = "/Rolex/Skydweller" class = "model-button"> Skydweller </a>
+        <a href = "/Rolex/GMT_Master_II" class = "model-button"> GMT Master II </a>
+        <a href = "/Rolex/Oyster_Perpetual" class = "model-button"> Oyster Perpetual </a>
+        <a href = "/Rolex/Explorer_I" class = "model-button"> Explorer I </a>
+        <a href = "/Rolex/Explorer_II" class = "model-button"> Explorer II </a>
+        <a href = "/Rolex/1908" class = "model-button"> 1908 </a>
+        <a href = "/Rolex/Air_King" class = "model-button">Air King </a>
+        <a href = "/Rolex/All" class = "model-button"> All Models </a>
     </div>
 {% endblock %}
-
-<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
