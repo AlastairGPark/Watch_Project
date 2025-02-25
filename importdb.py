@@ -44,20 +44,16 @@ with open("Watches.csv", "r", encoding = "UTF-8") as csvfile:
         # Remove spaces and handle NULL values
         row = [value.strip() if value.strip() != "NULL" else None for value in row]
 
-        # Ensure the row has exactly 27 columns
-        if len(row) == 27:
-            # Insert values into the database, skipping the unique ID
-            cursor.execute("""
-                INSERT INTO watches (
-                    id, brand, model, case_size, case_material, dial, reference_number, 
-                    movement, bracelet_material, bracelet_style, bracelet_colour, 
-                    closing_mechanism, closing_mechanism_material, bezel, bezel_colour, 
-                    bezel_numbers, price, complications, complication_colour, hour_markers, 
-                    hour_marker_colour, style, exclusivity, edition, image
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """)
-        else:
-            print(f"Skipping row with incorrect column count: {row}")
+    # Insert values into the database, skipping the unique ID
+        cursor.execute("""
+            INSERT INTO watches (
+                id, brand, model, case_size, case_material, dial, reference_number, 
+                movement, bracelet_material, bracelet_style, bracelet_colour, 
+                closing_mechanism, closing_mechanism_material, bezel, bezel_colour, 
+                bezel_numbers, price, complications, complication_colour, hour_markers, 
+                hour_marker_colour, style, exclusivity, edition, image
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """)
 
 # Commit changes and close connection
 conn.commit()
