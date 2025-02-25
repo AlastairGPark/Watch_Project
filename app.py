@@ -28,12 +28,12 @@ def search():
 
 @app.route('/<brand>/<model>')
 def show_model(brand, model):  # The function name must match what is used in `url_for()`
-    """Dynamically fetches watches from the database for a given brand and model."""
+    print(f"Brand: {brand}, Model: {model}")
     conn = sqlite3.connect("database.db")
     cursor = conn.cursor()
     
     # Ensure case-insensitive matching
-    cursor.execute("SELECT brand, model, reference_number, price FROM watches WHERE LOWER(brand) = LOWER(?) AND LOWER(model) = LOWER(?)", (brand, model))
+    cursor.execute("SELECT * FROM watches WHERE brand = ? AND model = ?", (brand, model))
     
     watches = cursor.fetchall()
     conn.close()
@@ -41,7 +41,7 @@ def show_model(brand, model):  # The function name must match what is used in `u
     if not watches:
         return "<h1>No watches found for this brand/model.</h1>", 404
     
-    return render_template('model_page.html', brand=brand, model=model, watches=watches)
+    return render_template('model_page.html', brand = brand, model = model, watches = watches)
 
 
 

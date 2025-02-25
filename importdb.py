@@ -4,6 +4,8 @@ import sqlite3
 conn = sqlite3.connect("database.db")
 cursor = conn.cursor()
 
+cursor.execute("DROP TABLE IF EXISTS watches;")
+
 # Create table if it doesn't exist
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS watches (
@@ -24,8 +26,10 @@ CREATE TABLE IF NOT EXISTS watches (
     bezel_colour TEXT,
     bezel_numbers TEXT,
     price REAL,
-    complications TEXT,
-    complication_colour TEXT,
+    complication_1 TEXT,
+    complication_2 TEXT,
+    complication_3 TEXT,
+    complication_4 TEXT,
     hour_markers TEXT,
     hour_marker_colour TEXT,
     style TEXT,
@@ -36,24 +40,59 @@ CREATE TABLE IF NOT EXISTS watches (
 """)
 
 # Open and read the CSV file
-with open("Watches.csv", "r", encoding = "UTF-8") as csvfile:
-    csv_reader = csv.reader(csvfile)
-    next(csv_reader)  # Skip header row
+with open("Watches.csv", "r", encoding="UTF-8") as csvfile:
+    csv_reader = csv.DictReader(csvfile)
     
     for row in csv_reader:
-        # Remove spaces and handle NULL values
-        row = [value.strip() if value.strip() != "NULL" else None for value in row]
-
-    # Insert values into the database, skipping the unique ID
+        # Convert "Price on Request" to None, otherwise convert price to float
+        raw_price = row.get("Price", "").strip()
+        if raw_price.lower() == "price on request":
+            price = None
+        else:
+            try:
+                price = float(raw_price.replace(",", "").replace("$", ""))
+            except ValueError:
+                price = None  # Fallback if price conversion fails
+        
+        # Match column names with DB schema and safely handle missing values
+        formatted_row = (
+            row["Brand"].strip(),
+            row["Model"].strip(),
+            row["Case Size"].strip(),
+            row["Case Material"].strip(),
+            row["Dial"].strip(),
+            row["Reference Number"].strip(),
+            row["Movement"].strip(),
+            row["Bracelet Material"].strip(),
+            row["Bracelet Style"].strip(),
+            row["Bracelet Colour"].strip(),
+            row["Closing Mechanism"].strip(),
+            row["Closing Mechanism Material"].strip(),
+            row["Bezel"].strip(),
+            row["Bezel Colour"].strip(),
+            row["Bezel Numbers"].strip(),
+            price,  # Insert the cleaned price
+            row.get("Complication 1", "").strip(),
+            row.get("Complication 2", "").strip(),
+            row.get("Complication 3", "").strip(),
+            row.get("Complication 4", "").strip(),
+            row["Hour Markers"].strip(),
+            row["Hour Marker Colour"].strip(),
+            row["Style"].strip(),
+            row["Exclusivity"].strip(),
+            row["Edition"].strip(),
+            row.get("Image", "").strip()
+        )
+        
         cursor.execute("""
             INSERT INTO watches (
-                id, brand, model, case_size, case_material, dial, reference_number, 
+                brand, model, case_size, case_material, dial, reference_number, 
                 movement, bracelet_material, bracelet_style, bracelet_colour, 
                 closing_mechanism, closing_mechanism_material, bezel, bezel_colour, 
-                bezel_numbers, price, complications, complication_colour, hour_markers, 
+                bezel_numbers, price, complication_1, complication_2, complication_3, complication_4, hour_markers, 
                 hour_marker_colour, style, exclusivity, edition, image
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, formatted_row)
 
 # Commit changes and close connection
 conn.commit()
