@@ -13,17 +13,17 @@
     </div>
 
     <div class = "model-grid">
-        <a href = "/Rolex/Daytona" class = "model-button"> Daytona </a>
-        <a href = "/Rolex/Daydate" class = "model-button"> Daydate </a>
-        <a href = "/Rolex/Datejust" class = "model-button"> Datejust </a>
-        <a href = "/Rolex/Yacht_Master" class = "model-button"> Yachtmaster </a>
-        <a href = "/Rolex/Skydweller" class = "model-button"> Skydweller </a>
-        <a href = "/Rolex/GMT_Master_II" class = "model-button"> GMT Master II </a>
-        <a href = "/Rolex/Oyster_Perpetual" class = "model-button"> Oyster Perpetual </a>
-        <a href = "/Rolex/Explorer_I" class = "model-button"> Explorer I </a>
-        <a href = "/Rolex/Explorer_II" class = "model-button"> Explorer II </a>
-        <a href = "/Rolex/1908" class = "model-button"> 1908 </a>
-        <a href = "/Rolex/Air_King" class = "model-button">Air King </a>
-        <a href = "/Rolex/All" class = "model-button"> All Models </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Daytona') }}" class = "model-button"> Daytona </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Daydate') }}" class = "model-button"> Daydate </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Datejust') }}" class = "model-button"> Datejust </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Skydweller') }}" class = "model-button"> Skydweller </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'GMT Master II') }}" class = "model-button"> GMT Master II </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Submariner') }}" class = "model-button"> Submariner </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Oyster Perpetual') }}" class = "model-button"> Oyster Perpetual </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Yacht Master') }}" class = "model-button"> Yacht Master </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Explorer I') }}" class = "model-button"> Explorer I </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Explorer II') }}" class = "model-button"> Explorer II </a>
+        <a href = "{{ url_for('show_model', brand = 'Rolex', model = 'Air King') }}" class = "model-button"> Air King </a>
+
     </div>
 {% endblock %}

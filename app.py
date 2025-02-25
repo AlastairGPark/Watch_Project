@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
+import sqlite3
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -25,67 +26,29 @@ def search():
     return "<h1> Search Page Coming Soon! </h1>"
 
 
+@app.route('/<brand>/<model>')
+def show_model(brand, model):  # The function name must match what is used in `url_for()`
+    """Dynamically fetches watches from the database for a given brand and model."""
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
+    
+    # Ensure case-insensitive matching
+    cursor.execute("SELECT brand, model, reference_number, price FROM watches WHERE LOWER(brand) = LOWER(?) AND LOWER(model) = LOWER(?)", (brand, model))
+    
+    watches = cursor.fetchall()
+    conn.close()
+
+    if not watches:
+        return "<h1>No watches found for this brand/model.</h1>", 404
+    
+    return render_template('model_page.html', brand=brand, model=model, watches=watches)
+
+
+
 ### Rolex ###
 @app.route('/Rolex')
 def Rolex():
     return render_template('brands/rolex.html')
-
-@app.route('/Rolex/1908')
-def Rolex_1908():
-    return render_template('brands/rolex_models/1908.html')
-
-@app.route('/Rolex/AirKing')
-def Rolex_airking():
-    return render_template('brands/rolex_models/airking.html')
-
-@app.route('/Rolex/Datejust')
-def Rolex_datejust():
-    return render_template('brands/rolex_models/datejust.html')
-
-@app.route('/Rolex/daydate')
-def Rolex_daydate():
-    return render_template('brands/rolex_models/daydate.html')
-
-@app.route('/Rolex/Daytona') 
-def rolex_daytona():
-    return render_template('brands/rolex_models/daytona.html')
-
-
-@app.route('/Rolex/Explorer_I')
-def Rolex_exploreri():
-    return render_template('brands/rolex_models/exploreri.html')
-
-@app.route('/Rolex/Explorer_II')
-def Rolex_explorerii():
-    return render_template('brands/rolex_models/explorerii.html')
-
-@app.route('/Rolex/GMT_Master_II')
-def Rolex_gmtmasterii():
-    return render_template('brands/rolex_models/gmtmasterii.html')
-
-@app.route('/Rolex/Milgauss')
-def Rolex_milgauss():
-    return render_template('brands/rolex_models/milgauss.html')
-
-@app.route('/Rolex/Oyster_Perpetual')
-def Rolex_oysterperpetual():
-    return render_template('brands/rolex_models/oysterperpetual.html')
-
-@app.route('/Rolex/Skydweller')
-def Rolex_skydweller():
-    return render_template('brands/rolex_models/skydweller.html')
-
-@app.route('/Rolex/Submariner')
-def Rolex_submariner():
-    return render_template('brands/rolex_models/submariner.html')
-
-@app.route('/Rolex/Yacht_Master')
-def Rolex_yachtmaster():
-    return render_template('brands/rolex_models/yachtmaster.html')
-
-@app.route('/Rolex/All')
-def Rolex_All():
-    return render_template('brands/rolex_all.html')
 
 ### End of Rolex ###
 

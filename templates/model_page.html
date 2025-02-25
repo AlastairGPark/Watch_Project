@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} {{ brand }} {{ model }} {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/brands/rolex.css') }}">
+{% endblock %}
+
+{% block subheader %}
+    <div class="subheader">
+        <h2> {{ brand }} {{ model }} </h2>
+    </div>
+
+    <div class="model-grid">
+        {% for watch in watches %}
+            <a href="/{{ brand }}/{{ model }}/{{ watch[2] }}" class="model-button">
+                {{ watch[1] }} - Ref: {{ watch[2] }} - ${{ watch[3] }}
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}
