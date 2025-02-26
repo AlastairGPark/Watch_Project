@@ -7,14 +7,13 @@ app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 
-
 # Home Page Route
 @app.route('/')
 def home():
     return render_template('home.html')
 
 
-# Favourite Page Route
+# Favourites Page Route
 @app.route('/favourites')
 def favourites():
     return "<h1> Favourites Page Coming Soon! </h1>"
@@ -26,79 +25,60 @@ def search():
     return "<h1> Search Page Coming Soon! </h1>"
 
 
-@app.route('/<brand>/<model>')
-def show_model(brand, model):  # The function name must match what is used in `url_for()`
-    print(f"Brand: {brand}, Model: {model}")
+### Dynamic Brand and Model Routing ###
+
+def get_all_brands():
+    """Fetch all unique brands from the database."""
     conn = sqlite3.connect("database.db")
     cursor = conn.cursor()
-    
-    # Ensure case-insensitive matching
+    cursor.execute("SELECT DISTINCT brand FROM watches ORDER BY brand")
+    brands = [row[0] for row in cursor.fetchall()]
+    conn.close()
+    return brands
+
+def get_models_by_brand(brand):
+    """Fetch all unique models for a given brand."""
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT DISTINCT model FROM watches WHERE brand = ? ORDER BY model", (brand,))
+    models = [row[0] for row in cursor.fetchall()]
+    conn.close()
+    return models
+
+def get_watches_by_brand_and_model(brand, model):
+    """Fetch all watches that match a given brand and model."""
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
     cursor.execute("SELECT * FROM watches WHERE brand = ? AND model = ?", (brand, model))
-    
     watches = cursor.fetchall()
     conn.close()
+    return watches
+
+
+@app.route('/brands')
+def brand_list():
+    """Show all brands dynamically."""
+    brands = get_all_brands()
+    return render_template("brands.html", brands = brands)
+
+
+@app.route('/<brand>')
+def model_list(brand):
+    """Show all models for a selected brand dynamically."""
+    models = get_models_by_brand(brand)
+    return render_template("models.html", brand = brand, models = models)
+
+
+@app.route('/<brand>/<model>')
+def watch_list(brand, model):
+    """Display all watches matching a given brand and model."""
+    watches = get_watches_by_brand_and_model(brand, model)
 
     if not watches:
         return "<h1>No watches found for this brand/model.</h1>", 404
-    
-    return render_template('model_page.html', brand = brand, model = model, watches = watches)
 
-
-
-### Rolex ###
-@app.route('/Rolex')
-def Rolex():
-    return render_template('brands/rolex.html')
-
-### End of Rolex ###
-
-
-
-### Audemars Piguet ###
-
-@app.route('/AudemarsPiguet')
-def AudemarsPiguet():
-    return render_template('brands/ap.html')
-
-### End of Audemars Piguet ###
-
-
-
-### Vacheron Constantin ###
-
-@app.route('/VacheronConstantin')
-def VacheronConstantin():
-    return render_template('brands/vc.html')
-
-### End of Vacheron Constantin ###
-
-
-
-### Tudor ###
-
-@app.route('/Tudor')
-def Tudor():
-    return render_template('brands/tudor.html')
-
-### End of Tudor ###
-
-
-
-### Ulysse Nardin ###
-
-@app.route('/UlysseNardin')
-def UlysseNardin():
-    return render_template('brands/un.html')
-
-### End of Ulysse Nardin ###
-
-
-
-
-@app.route('/brand/<brand_name>')
-def brand_page(brand_name):
-    return render_template('brand.html', brand_name=brand_name)
+    return render_template("model_page.html", brand=brand, model = model, watches = watches)
 
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug=True)

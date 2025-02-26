@@ -4,19 +4,27 @@
 
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/brands/rolex.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/brands/' + brand|lower|replace(' ', '_') + '.css') }}">
 {% endblock %}
 
 {% block subheader %}
-    <div class="subheader">
+    <div class = "subheader">
         <h2> {{ brand }} {{ model }} </h2>
     </div>
 
     <div class="model-grid">
         {% for watch in watches %}
-            <a href="/{{ brand }}/{{ model }}/{{ watch[2] }}" class="model-button">
-                {{ watch[1] }} - Ref: {{ watch[2] }} - ${{ watch[3] }}
-            </a>
+            <div class = "watch-card">
+                <img src = "{{ watch[26] }}" alt = "{{ watch[1] }} {{ watch[2] }}" class = "watch-image">  
+                <div class="watch-info">
+                    <h3>{{ watch[1] }}</h3>
+                    <p> {{ watch[2] }} </p>
+                    <p> {{ watch[3] }}mm </p>
+                    <p> Reference: {{ watch[6] }} </p>
+                    <p> Price: {% if watch[16] %} ${{ watch[16] }} {% else %} Price on Request {% endif %} </p>
+                    <a href="/{{ brand }}/{{ model }}/{{ watch[6] }}" class="details-button"> View Details </a>
+                </div>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}
