@@ -1,0 +1,109 @@
+Bracelet ID,Bracelet Material,Bracelet Type,Bracelet Colour
+ST/O,Stainless Steel,Oyster,Stainless Steel
+ST/J,Stainless Steel,Jubilee,Stainless Steel
+ST/I,Stainless Steel,Integrated,Stainless Steel
+ST/S,Stainless Steel,Standard,Stainless Steel
+WG/O,White Gold,Oyster,White Gold
+WG/J,White Gold,Jubilee,White Gold
+WG/I,White Gold,Integrated,White Gold
+WG/S,White Gold,Standard,White Gold
+YG/O,Yellow Gold,Oyster,Yellow Gold
+YG/J,Yellow Gold,Jubilee,Yellow Gold
+YG/I,Yellow Gold,Integrated,Yellow Gold
+YG/S,Yellow Gold,Standard,Yellow Gold
+RG/O,Rose Gold,Oyster,Rose Gold
+RG/J,Rose Gold,Jubilee,Rose Gold
+RG/I,Rose Gold,Integrated,Rose Gold
+RG/S,Rose Gold,Standard,Rose Gold
+WG/O,White Two-Tone,Oyster,White Two-Tone
+WG/J,White Two-Tone,Jubilee,White Two-Tone
+WG/I,White Two-Tone,Integrated,White Two-Tone
+WG/S,White Two-Tone,Standard,White Two-Tone
+YGTT/O,Yellow Two-Tone,Oyster,Yellow Two-Tone
+YGTT/J,Yellow Two-Tone,Jubilee,Yellow Two-Tone
+YGTT/I,Yellow Two-Tone,Integrated,Yellow Two-Tone
+YGTT/S,Yellow Two-Tone,Standard,Yellow Two-Tone
+RGTT/O,Rose Two-Tone,Oyster,Rose Two-Tone
+RGTT/J,Rose Two-Tone,Jubilee,Rose Two-Tone
+RGTT/I,Rose Two-Tone,Integrated,Rose Two-Tone
+RGTT/S,Rose Two-Tone,Standard,Rose Two-Tone
+PL/O,Platinum,Oyster,Platinum
+PL/J,Platinum,Jubilee,Platinum
+PL/I,Platinum,Integrated,Platinum
+PL/S,Platinum,Standard,Platinum
+RUB/TXT/RED,Rubber,Textured,Red
+RUB/TXT/PNK,Rubber,Textured,Pink
+RUB/TXT/ORN,Rubber,Textured,Orange
+RUB/TXT/CHM,Rubber,Textured,Champagne
+RUB/TXT/LGRN,Rubber,Textured,Light Green
+RUB/TXT/GRN,Rubber,Textured,Green
+RUB/TXT/OLVGRN,Rubber,Textured,Olive Green
+RUB/TXT/DGRN,Rubber,Textured,Dark Green
+RUB/TXT/LBLU,Rubber,Textured,Light Blue
+RUB/TXT/BBLU,Rubber,Textured,Bright Blue
+RUB/TXT/BLU,Rubber,Textured,Blue
+RUB/TXT/DBLU,Rubber,Textured,Dark Blue
+RUB/TXT/LPRP,Rubber,Textured,Light Purple
+RUB/TXT/PRP,Rubber,Textured,Purple
+RUB/TXT/DPRP,Rubber,Textured,Dark Purple
+RUB/TXT/WHT,Rubber,Textured,White
+RUB/TXT/SIL,Rubber,Textured,Silver
+RUB/TXT/GRY,Rubber,Textured,Gray
+RUB/TXT/BLK,Rubber,Textured,Black
+RUB/S/RED,Rubber,Standard,Red
+RUB/S/PNK,Rubber,Standard,Pink
+RUB/S/ORN,Rubber,Standard,Orange
+RUB/S/CHM,Rubber,Standard,Champagne
+RUB/S/LGRN,Rubber,Standard,Light Green
+RUB/S/GRN,Rubber,Standard,Green
+RUB/S/OLVGRN,Rubber,Standard,Olive Green
+RUB/S/DGRN,Rubber,Standard,Dark Green
+RUB/S/LBLU,Rubber,Standard,Light Blue
+RUB/S/BBLU,Rubber,Standard,Bright Blue
+RUB/S/BLU,Rubber,Standard,Blue
+RUB/S/DBLU,Rubber,Standard,Dark Blue
+RUB/S/LPRP,Rubber,Standard,Light Purple
+RUB/S/PRP,Rubber,Standard,Purple
+RUB/S/DPRP,Rubber,Standard,Dark Purple
+RUB/S/WHT,Rubber,Standard,White
+RUB/S/SIL,Rubber,Standard,Silver
+RUB/S/GRY,Rubber,Standard,Gray
+RUB/S/BLK,Rubber,Standard,Black
+LTH/GTR/RED,Leather,Alligator,Red
+LTH/GTR/PNK,Leather,Alligator,Pink
+LTH/GTR/ORN,Leather,Alligator,Orange
+LTH/GTR/CHM,Leather,Alligator,Champagne
+LTH/GTR/LGRN,Leather,Alligator,Light Green
+LTH/GTR/GRN,Leather,Alligator,Green
+LTH/GTR/OLVGRN,Leather,Alligator,Olive Green
+LTH/GTR/DGRN,Leather,Alligator,Dark Green
+LTH/GTR/LBLU,Leather,Alligator,Light Blue
+LTH/GTR/BBLU,Leather,Alligator,Bright Blue
+LTH/GTR/BLU,Leather,Alligator,Blue
+LTH/GTR/DBLU,Leather,Alligator,Dark Blue
+LTH/GTR/LPRP,Leather,Alligator,Light Purple
+LTH/GTR/PRP,Leather,Alligator,Purple
+LTH/GTR/DPRP,Leather,Alligator,Dark Purple
+LTH/GTR/WHT,Leather,Alligator,White
+LTH/GTR/SIL,Leather,Alligator,Silver
+LTH/GTR/GRY,Leather,Alligator,Gray
+LTH/GTR/BLK,Leather,Alligator,Black
+LTH/CAF/RED,Leather,Calfskin,Red
+LTH/CAR/PNK,Leather,Calfskin,Pink
+LTH/CAR/ORN,Leather,Calfskin,Orange
+LTH/CAR/CHM,Leather,Calfskin,Champagne
+LTH/CAR/LGRN,Leather,Calfskin,Light Green
+LTH/CAR/GRN,Leather,Calfskin,Green
+LTH/CAR/OLVGRN,Leather,Calfskin,Olive Green
+LTH/CAR/DGRN,Leather,Calfskin,Dark Green
+LTH/CAR/LBLU,Leather,Calfskin,Light Blue
+LTH/CAR/BBLU,Leather,Calfskin,Bright Blue
+LTH/CAR/BLU,Leather,Calfskin,Blue
+LTH/CAR/DBLU,Leather,Calfskin,Dark Blue
+LTH/CAR/LPRP,Leather,Calfskin,Light Purple
+LTH/CAR/PRP,Leather,Calfskin,Purple
+LTH/CAR/DPRP,Leather,Calfskin,Dark Purple
+LTH/CAR/WHT,Leather,Calfskin,White
+LTH/CAR/SIL,Leather,Calfskin,Silver
+LTH/CAR/GRY,Leather,Calfskin,Gray
+LTH/CAR/BLK,Leather,Calfskin,Black
