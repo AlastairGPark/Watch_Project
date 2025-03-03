@@ -2,6 +2,7 @@ Complication and Colour ID,Complication Name,Colour
 CHRONO.RED,Chronograph,Red
 CHRONO.PNK,Chronograph,Pink
 CHRONO.ORN,Chronograph,Orange
+CHRONO.YEL,Day,Yellow
 CHRONO.CHM,Chronograph,Champagne
 CHRONO.LGRN,Chronograph,Light Green
 CHRONO.GRN,Chronograph,Green
@@ -24,6 +25,7 @@ CHRONO.BLK,Chronograph,Black
 DAY.RED,Day,Red
 DAY.PNK,Day,Pink
 DAY.ORN,Day,Orange
+DAY.YEL,Day,Yellow
 DAY.CHM,Day,Champagne
 DAY.LGRN,Day,Light Green
 DAY.GRN,Day,Green
@@ -46,6 +48,7 @@ DAY.BLK,Day,Black
 DATE.RED,Date,Red
 DATE.PNK,Date,Pink
 DATE.ORN,Date,Orange
+DATE.YEL,Date,Yellow
 DATE.CHM,Date,Champagne
 DATE.LGRN,Date,Light Green
 DATE.GRN,Date,Green
@@ -68,6 +71,7 @@ DATE.BLK,Date,Black
 GMT.RED,GMT,Red
 GMT.PNK,GMT,Pink
 GMT.ORN,GMT,Orange
+GMT.YEL,GMT,Yellow
 GMT.CHM,GMT,Champagne
 GMT.LGRN,GMT,Light Green
 GMT.GRN,GMT,Green
@@ -90,6 +94,7 @@ GMT.BLK,GMT,Black
 SKEL.RED,Skeleton,Red
 SKEL.PNK,Skeleton,Pink
 SKEL.ORN,Skeleton,Orange
+SKEL.YEL,Skeleton,Yellow
 SKEL.CHM,Skeleton,Champagne
 SKEL.LGRN,Skeleton,Light Green
 SKEL.GRN,Skeleton,Green
@@ -113,6 +118,7 @@ TOURB,Tourbillon,NONE
 PC.RED,Perpetual Calendar,Red
 PC.PNK,Perpetual Calendar,Pink
 PC.ORN,Perpetual Calendar,Orange
+PC.YEL,Perpetual Calendar,Yellow
 PC.CHM,Perpetual Calendar,Champagne
 PC.LGRN,Perpetual Calendar,Light Green
 PC.GRN,Perpetual Calendar,Green
@@ -132,3 +138,49 @@ PC.WG,Perpetual Calendar,White Gold
 PC.YG,Perpetual Calendar,Yellow Gold
 PC.RG,Perpetual Calendar,Rose Gold
 PC.BLK,Perpetual Calendar,Black
+PR.RED,Power Reserve,Red
+PR.PNK,Power Reserve,Pink
+PR.ORN,Power Reserve,Orange
+PR.YEL,Power Reserve,Yellow
+PR.CHM,Power Reserve,Champagne
+PR.LGRN,Power Reserve,Light Green
+PR.GRN,Power Reserve,Green
+PR.OLVGRN,Power Reserve,Olive Green
+PR.DGRN,Power Reserve,Dark Green
+PR.LBLU,Power Reserve,Light Blue
+PR.BBLU,Power Reserve,Bright Blue
+PR.BLU,Power Reserve,Blue
+PR.DBLU,Power Reserve,Dark Blue
+PR.LPRP,Power Reserve,Light Purple
+PR.PRP,Power Reserve,Purple
+PR.DPRP,Power Reserve,Dark Purple
+PR.WHT,Power Reserve,White
+PR.SIL,Power Reserve,Silver
+PR.GRY,Power Reserve,Gray
+PR.WG,Power Reserve,White Gold
+PR.YG,Power Reserve,Yellow Gold
+PR.RG,Power Reserve,Rose Gold
+BLK,Power Reserve,Black
+SS.RED,Small Seconds,Red
+SS.PNK,Small Seconds,Pink
+SS.ORN,Small Seconds,Orange
+SS.YEL,Small Seconds,Yellow
+SS.CHM,Small Seconds,Champagne
+SS.LGRN,Small Seconds,Light Green
+SS.GRN,Small Seconds,Green
+SS.OLVGRN,Small Seconds,Olive Green
+SS.DGRN,Small Seconds,Dark Green
+SS.LBLU,Small Seconds,Light Blue
+SS.BBLU,Small Seconds,Bright Blue
+SS.BLU,Small Seconds,Blue
+SS.DBLU,Small Seconds,Dark Blue
+SS.LPRP,Small Seconds,Light Purple
+SS.PRP,Small Seconds,Purple
+SS.DPRP,Small Seconds,Dark Purple
+SS.WHT,Small Seconds,White
+SS.SIL,Small Seconds,Silver
+SS.GRY,Small Seconds,Gray
+SS.WG,Small Seconds,White Gold
+SS.YG,Small Seconds,Yellow Gold
+SS.RG,Small Seconds,Rose Gold
+SS.BLK,Small Seconds,Black
