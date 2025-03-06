@@ -1,27 +1,52 @@
 Complication and Colour ID,Complication Name,Colour
-CHRONO.RED,Chronograph,Red
-CHRONO.PNK,Chronograph,Pink
-CHRONO.ORN,Chronograph,Orange
-CHRONO.YEL,Day,Yellow
-CHRONO.CHM,Chronograph,Champagne
-CHRONO.LGRN,Chronograph,Light Green
-CHRONO.GRN,Chronograph,Green
-CHRONO.OLVGRN,Chronograph,Olive Green
-CHRONO.DGRN,Chronograph,Dark Green
-CHRONO.LBLU,Chronograph,Light Blue
-CHRONO.BBLUE,Chronograph,Bright Blue
-CHRONO.BLU,Chronograph,Blue
-CHRONO.DBLU,Chronograph,Dark Blue
-CHRONO.LPRP,Chronograph,Light Purple
-CHRONO.PRP,Chronograph,Purple
-CHRONO.DPRP,Chronograph,Dark Purple
-CHRONO.WHT,Chronograph,White
-CHRONO.SIL,Chronograph,Silver
-CHRONO.GRY,Chronograph,Gray
-CHRONO.WG,Chronograph,White Gold
-CHRONO.YG,Chronograph,Yellow Gold
-CHRONO.RG,Chronograph,Rose Gold
-CHRONO.BLK,Chronograph,Black
+CHRONO.RED.FULL,Full Chronograph,Red
+CHRONO.PNK.FULL,Full Chronograph,Pink
+CHRONO.ORN.FULL,Full Chronograph,Orange
+CHRONO.YEL.FULL,Full Chronograph,Yellow
+CHRONO.CHM.FULL,Full Chronograph,Champagne
+CHRONO.LGRN.FULL,Full Chronograph,Light Green
+CHRONO.GRN.FULL,Full Chronograph,Green
+CHRONO.OGRN.FULL,Full Chronograph,Olive Green
+CHRONO.DGRN.FULL,Full Chronograph,Dark Green
+CHRONO.LBLU.FULL,Full Chronograph,Light Blue
+CHRONO.BBLUE.FULL,Full Chronograph,Bright Blue
+CHRONO.BLU.FULL,Full Chronograph,Blue
+CHRONO.DBLU.FULL,Full Chronograph,Dark Blue
+CHRONO.LPRP.FULL,Full Chronograph,Light Purple
+CHRONO.PRP.FULL,Full Chronograph,Purple
+CHRONO.DPRP.FULL,Full Chronograph,Dark Purple
+CHRONO.WHT.FULL,Full Chronograph,White
+CHRONO.SIL.FULL,Full Chronograph,Silver
+CHRONO.GRY.FULL,Full Chronograph,Gray
+CHRONO.WG.FULL,Full Chronograph,White Gold
+CHRONO.YG.FULL,Full Chronograph,Yellow Gold
+CHRONO.RG.FULL,Full Chronograph,Rose Gold
+CHRONO.BRN.FULL,Full Chronograph,Brown
+CHRONO.BLK.FULL,Full Chronograph,Black
+CHRONO.RED.OUT,Outline Chronograph,Red
+CHRONO.PNK.OUT,Outline Chronograph,Pink
+CHRONO.ORN.OUT,Outline Chronograph,Orange
+CHRONO.YEL.OUT,Outline Chronograph,Yellow
+CHRONO.CHM.OUT,Outline Chronograph,Champagne
+CHRONO.LGRN.OUT,Outline Chronograph,Light Green
+CHRONO.GRN.OUT,Outline Chronograph,Green
+CHRONO.OGRN.OUT,Outline Chronograph,Olive Green
+CHRONO.DGRN.OUT,Outline Chronograph,Dark Green
+CHRONO.LBLU.OUT,Outline Chronograph,Light Blue
+CHRONO.BBLUE.OUT,Outline Chronograph,Bright Blue
+CHRONO.BLU.OUT,Outline Chronograph,Blue
+CHRONO.DBLU.OUT,Outline Chronograph,Dark Blue
+CHRONO.LPRP.OUT,Outline Chronograph,Light Purple
+CHRONO.PRP.OUT,Outline Chronograph,Purple
+CHRONO.DPRP.OUT,Outline Chronograph,Dark Purple
+CHRONO.WHT.OUT,Outline Chronograph,White
+CHRONO.SIL.OUT,Outline Chronograph,Silver
+CHRONO.GRY.OUT,Outline Chronograph,Gray
+CHRONO.WG.OUT,Outline Chronograph,White Gold
+CHRONO.YG.OUT,Outline Chronograph,Yellow Gold
+CHRONO.RG.OUT,Outline Chronograph,Rose Gold
+CHRONO.BRN.OUT,Outline Chronograph,Brown
+CHRONO.BLK.OUT,Outline Chronograph,Black
 DAY.RED,Day,Red
 DAY.PNK,Day,Pink
 DAY.ORN,Day,Orange
@@ -29,7 +54,7 @@ DAY.YEL,Day,Yellow
 DAY.CHM,Day,Champagne
 DAY.LGRN,Day,Light Green
 DAY.GRN,Day,Green
-DAY.OLVGRN,Day,Olive Green
+DAY.OGRN,Day,Olive Green
 DAY.DGRN,Day,Dark Green
 DAY.LBLU,Day,Light Blue
 DAY.BBLUE,Day,Bright Blue
@@ -44,6 +69,7 @@ DAY.GRY,Day,Gray
 DAY.WG,Day,White Gold
 DAY.YG,Day,Yellow Gold
 DAY.RG,Day,Rose Gold
+DAY.BRN,Day,Brown
 DAY.BLK,Day,Black
 DATE.RED,Date,Red
 DATE.PNK,Date,Pink
@@ -52,7 +78,7 @@ DATE.YEL,Date,Yellow
 DATE.CHM,Date,Champagne
 DATE.LGRN,Date,Light Green
 DATE.GRN,Date,Green
-DATE.OLVGRN,Date,Olive Green
+DATE.OGRN,Date,Olive Green
 DATE.DGRN,Date,Dark Green
 DATE.LBLU,Date,Light Blue
 DATE.BBLU,Date,Bright Blue
@@ -67,6 +93,7 @@ DATE.GRY,Date,Gray
 DATE.WG,Date,White Gold
 DATE.YG,Date,Yellow Gold
 DATE.RG,Date,Rose Gold
+DATE.BRN,Date,Brown
 DATE.BLK,Date,Black
 GMT.RED,GMT,Red
 GMT.PNK,GMT,Pink
@@ -75,7 +102,7 @@ GMT.YEL,GMT,Yellow
 GMT.CHM,GMT,Champagne
 GMT.LGRN,GMT,Light Green
 GMT.GRN,GMT,Green
-GMT.OLVGRN,GMT,Olive Green
+GMT.OGRN,GMT,Olive Green
 GMT.DGRN,GMT,Dark Green
 GMT.LBLU,GMT,Light Blue
 GMT.BBLU,GMT,Bright Blue
@@ -90,6 +117,7 @@ GMT.GRY,GMT,Gray
 GMT.WG,GMT,White Gold
 GMT.YG,GMT,Yellow Gold
 GMT.RG,GMT,Rose Gold
+GMT.BRN,GMT,Brown
 GMT.BLK,GMT,Black
 SKEL.RED,Skeleton,Red
 SKEL.PNK,Skeleton,Pink
@@ -98,7 +126,7 @@ SKEL.YEL,Skeleton,Yellow
 SKEL.CHM,Skeleton,Champagne
 SKEL.LGRN,Skeleton,Light Green
 SKEL.GRN,Skeleton,Green
-SKEL.OLVGRN,Skeleton,Olive Green
+SKEL.OGRN,Skeleton,Olive Green
 SKEL.DGRN,Skeleton,Dark Green
 SKEL.LBLU,Skeleton,Light Blue
 SKEL.BBLU,Skeleton,Bright Blue
@@ -113,6 +141,7 @@ SKEL.GRY,Skeleton,Gray
 SKEL.WG,Skeleton,White Gold
 SKEL.YG,Skeleton,Yellow Gold
 SKEL.RG,Skeleton,Rose Gold
+SKEL.BRN,Skeleton,Brown
 SKEL.BLK,Skeleton,Black
 TOURB,Tourbillon,NONE
 PC.RED,Perpetual Calendar,Red
@@ -122,7 +151,7 @@ PC.YEL,Perpetual Calendar,Yellow
 PC.CHM,Perpetual Calendar,Champagne
 PC.LGRN,Perpetual Calendar,Light Green
 PC.GRN,Perpetual Calendar,Green
-PC.OLVGRN,Perpetual Calendar,Olive Green
+PC.OGRN,Perpetual Calendar,Olive Green
 PC.DGRN,Perpetual Calendar,Dark Green
 PC.LBLU,Perpetual Calendar,Light Blue
 PC.BBLU,Perpetual Calendar,Bright Blue
@@ -137,6 +166,7 @@ PC.GRY,Perpetual Calendar,Gray
 PC.WG,Perpetual Calendar,White Gold
 PC.YG,Perpetual Calendar,Yellow Gold
 PC.RG,Perpetual Calendar,Rose Gold
+PC.BRN,Perpetual Calendar,Brown
 PC.BLK,Perpetual Calendar,Black
 PR.RED,Power Reserve,Red
 PR.PNK,Power Reserve,Pink
@@ -145,7 +175,7 @@ PR.YEL,Power Reserve,Yellow
 PR.CHM,Power Reserve,Champagne
 PR.LGRN,Power Reserve,Light Green
 PR.GRN,Power Reserve,Green
-PR.OLVGRN,Power Reserve,Olive Green
+PR.OGRN,Power Reserve,Olive Green
 PR.DGRN,Power Reserve,Dark Green
 PR.LBLU,Power Reserve,Light Blue
 PR.BBLU,Power Reserve,Bright Blue
@@ -160,27 +190,203 @@ PR.GRY,Power Reserve,Gray
 PR.WG,Power Reserve,White Gold
 PR.YG,Power Reserve,Yellow Gold
 PR.RG,Power Reserve,Rose Gold
-BLK,Power Reserve,Black
-SS.RED,Small Seconds,Red
-SS.PNK,Small Seconds,Pink
-SS.ORN,Small Seconds,Orange
-SS.YEL,Small Seconds,Yellow
-SS.CHM,Small Seconds,Champagne
-SS.LGRN,Small Seconds,Light Green
-SS.GRN,Small Seconds,Green
-SS.OLVGRN,Small Seconds,Olive Green
-SS.DGRN,Small Seconds,Dark Green
-SS.LBLU,Small Seconds,Light Blue
-SS.BBLU,Small Seconds,Bright Blue
-SS.BLU,Small Seconds,Blue
-SS.DBLU,Small Seconds,Dark Blue
-SS.LPRP,Small Seconds,Light Purple
-SS.PRP,Small Seconds,Purple
-SS.DPRP,Small Seconds,Dark Purple
-SS.WHT,Small Seconds,White
-SS.SIL,Small Seconds,Silver
-SS.GRY,Small Seconds,Gray
-SS.WG,Small Seconds,White Gold
-SS.YG,Small Seconds,Yellow Gold
-SS.RG,Small Seconds,Rose Gold
-SS.BLK,Small Seconds,Black
+PR.BRN,Power Reserve,Brown
+PR.BLK,Power Reserve,Black
+SS.RED.FULL,Full Small Seconds,Red
+SS.PNK.FULL,Full Small Seconds,Pink
+SS.ORN.FULL,Full Small Seconds,Orange
+SS.YEL.FULL,Full Small Seconds,Yellow
+SS.CHM.FULL,Full Small Seconds,Champagne
+SS.LGRN.FULL,Full Small Seconds,Light Green
+SS.GRN.FULL,Full Small Seconds,Green
+SS.OGRN.FULL,Full Small Seconds,Olive Green
+SS.DGRN.FULL,Full Small Seconds,Dark Green
+SS.LBLU.FULL,Full Small Seconds,Light Blue
+SS.BBLU.FULL,Full Small Seconds,Bright Blue
+SS.BLU.FULL,Full Small Seconds,Blue
+SS.DBLU.FULL,Full Small Seconds,Dark Blue
+SS.LPRP.FULL,Full Small Seconds,Light Purple
+SS.PRP.FULL,Full Small Seconds,Purple
+SS.DPRP.FULL,Full Small Seconds,Dark Purple
+SS.WHT.FULL,Full Small Seconds,White
+SS.SIL.FULL,Full Small Seconds,Silver
+SS.GRY.FULL,Full Small Seconds,Gray
+SS.WG.FULL,Full Small Seconds,White Gold
+SS.YG.FULL,Full Small Seconds,Yellow Gold
+SS.RG.FULL,Full Small Seconds,Rose Gold
+SS.BRN.FULL,Full Small Seconds,Brown
+SS.BLK.FULL,Full Small Seconds,Black
+SS.RED.OUT,Outline Small Seconds,Red
+SS.PNK.OUT,Outline Small Seconds,Pink
+SS.ORN.OUT,Outline Small Seconds,Orange
+SS.YEL.OUT,Outline Small Seconds,Yellow
+SS.CHM.OUT,Outline Small Seconds,Champagne
+SS.LGRN.OUT,Outline Small Seconds,Light Green
+SS.GRN.OUT,Outline Small Seconds,Green
+SS.OGRN.OUT,Outline Small Seconds,Olive Green
+SS.DGRN.OUT,Outline Small Seconds,Dark Green
+SS.LBLU.OUT,Outline Small Seconds,Light Blue
+SS.BBLU.OUT,Outline Small Seconds,Bright Blue
+SS.BLU.OUT,Outline Small Seconds,Blue
+SS.DBLU.OUT,Outline Small Seconds,Dark Blue
+SS.LPRP.OUT,Outline Small Seconds,Light Purple
+SS.PRP.OUT,Outline Small Seconds,Purple
+SS.DPRP.OUT,Outline Small Seconds,Dark Purple
+SS.WHT.OUT,Outline Small Seconds,White
+SS.SIL.OUT,Outline Small Seconds,Silver
+SS.GRY.OUT,Outline Small Seconds,Gray
+SS.WG.OUT,Outline Small Seconds,White Gold
+SS.YG.OUT,Outline Small Seconds,Yellow Gold
+SS.RG.OUT,Outline Small Seconds,Rose Gold
+SS.BRN.OUT,Outline Small Seconds,Brown
+SS.BLK.OUT,Outline Small Seconds,Black
+RB.RED,Rotating Bezel,Red
+RB.PNK,Rotating Bezel,Pink
+RB.ORN,Rotating Bezel,Orange
+RB.YEL,Rotating Bezel,Yellow
+RB.CHM,Rotating Bezel,Champagne
+RB.LGRN,Rotating Bezel,Light Green
+RB.GRN,Rotating Bezel,Green
+RB.OGRN,Rotating Bezel,Olive Green
+RB.DGRN,Rotating Bezel,Dark Green
+RB.LBLU,Rotating Bezel,Light Blue
+RB.BBLU,Rotating Bezel,Bright Blue
+RB.BLU,Rotating Bezel,Blue
+RB.DBLU,Rotating Bezel,Dark Blue
+RB.LPRP,Rotating Bezel,Light Purple
+RB.PRP,Rotating Bezel,Purple
+RB.DPRP,Rotating Bezel,Dark Purple
+RB.WHT,Rotating Bezel,White
+RB.SIL,Rotating Bezel,Silver
+RB.GRY,Rotating Bezel,Gray
+RB.WG,Rotating Bezel,White Gold
+RB.YG,Rotating Bezel,Yellow Gold
+RB.RG,Rotating Bezel,Rose Gold
+RB.BRN,Rotating Bezel,Brown
+RB.BLK,Rotating Bezel,Black
+WAND.RED,Wandering Time,Red
+WAND.PNK,Wandering Time,Pink
+WAND.ORN,Wandering Time,Orange
+WAND.YEL,Wandering Time,Yellow
+WAND.CHM,Wandering Time,Champagne
+WAND.LGRN,Wandering Time,Light Green
+WAND.GRN,Wandering Time,Green
+WAND.OGRN,Wandering Time,Olive Green
+WAND.DGRN,Wandering Time,Dark Green
+WAND.LBLU,Wandering Time,Light Blue
+WAND.BBLU,Wandering Time,Bright Blue
+WAND.BLU,Wandering Time,Blue
+WAND.DBLU,Wandering Time,Dark Blue
+WAND.LPRP,Wandering Time,Light Purple
+WAND.PRP,Wandering Time,Purple
+WAND.DPRP,Wandering Time,Dark Purple
+WAND.WHT,Wandering Time,White
+WAND.SIL,Wandering Time,Silver
+WAND.GRY,Wandering Time,Gray
+WAND.WG,Wandering Time,White Gold
+WAND.YG,Wandering Time,Yellow Gold
+WAND.RG,Wandering Time,Rose Gold
+WAND.BRN,Wandering Time,Brown
+WAND.BLK,Wandering Time,Black
+MP.RED,Moonphase,Red
+MP.PNK,Moonphase,Pink
+MP.ORN,Moonphase,Orange
+MP.YEL,Moonphase,Yellow
+MP.CHM,Moonphase,Champagne
+MP.LGRN,Moonphase,Light Green
+MP.GRN,Moonphase,Green
+MP.OGRN,Moonphase,Olive Green
+MP.DGRN,Moonphase,Dark Green
+MP.LBLU,Moonphase,Light Blue
+MP.BBLU,Moonphase,Bright Blue
+MP.BLU,Moonphase,Blue
+MP.DBLU,Moonphase,Dark Blue
+MP.LPRP,Moonphase,Light Purple
+MP.PRP,Moonphase,Purple
+MP.DPRP,Moonphase,Dark Purple
+MP.WHT,Moonphase,White
+MP.SIL,Moonphase,Silver
+MP.GRY,Moonphase,Gray
+MP.WG,Moonphase,White Gold
+MP.YG,Moonphase,Yellow Gold
+MP.RG,Moonphase,Rose Gold
+MP.BRN,Moonphase,Brown
+MP.BLK,Moonphase,Black
+RD.RED,Retrograde Date,Red
+RD.PNK,Retrograde Date,Pink
+RD.ORN,Retrograde Date,Orange
+RD.YEL,Retrograde Date,Yellow
+RD.CHM,Retrograde Date,Champagne
+RD.LGRN,Retrograde Date,Light Green
+RD.GRN,Retrograde Date,Green
+RD.OGRN,Retrograde Date,Olive Green
+RD.DGRN,Retrograde Date,Dark Green
+RD.LBLU,Retrograde Date,Light Blue
+RD.BBLU,Retrograde Date,Bright Blue
+RD.BLU,Retrograde Date,Blue
+RD.DBLU,Retrograde Date,Dark Blue
+RD.LPRP,Retrograde Date,Light Purple
+RD.PRP,Retrograde Date,Purple
+RD.DPRP,Retrograde Date,Dark Purple
+RD.WHT,Retrograde Date,White
+RD.SIL,Retrograde Date,Silver
+RD.GRY,Retrograde Date,Gray
+RD.WG,Retrograde Date,White Gold
+RD.YG,Retrograde Date,Yellow Gold
+RD.RG,Retrograde Date,Rose Gold
+RD.BRN,Retrograde Date,Brown
+RD.BLK,Retrograde Date,Black
+UT,Ultra Thin,
+THIN,Thin,
+WT.RED,World Timer,Red
+WT.PNK,World Timer,Pink
+WT.ORN,World Timer,Orange
+WT.YEL,World Timer,Yellow
+WT.CHM,World Timer,Champagne
+WT.LGRN,World Timer,Light Green
+WT.GRN,World Timer,Green
+WT.OGRN,World Timer,Olive Green
+WT.DGRN,World Timer,Dark Green
+WT.LBLU,World Timer,Light Blue
+WT.BBLU,World Timer,Bright Blue
+WT.BLU,World Timer,Blue
+WT.DBLU,World Timer,Dark Blue
+WT.LPRP,World Timer,Light Purple
+WT.PRP,World Timer,Purple
+WT.DPRP,World Timer,Dark Purple
+WT.WHT,World Timer,White
+WT.SIL,World Timer,Silver
+WT.GRY,World Timer,Gray
+WT.WG,World Timer,White Gold
+WT.YG,World Timer,Yellow Gold
+WT.RG,World Timer,Rose Gold
+WT.BRN,World Timer,Brown
+WT.BLK,World Timer,Black
+FREAK,FREAK,FREAK
+AC/RED,Annual Calendar,Red
+AC/PNK,Annual Calendar,Pink
+AC/ORN,Annual Calendar,Orange
+AC/YEL,Annual Calendar,Yellow
+AC/CHM,Annual Calendar,Champagne
+AC/LGRN,Annual Calendar,Light Green
+AC/GRN,Annual Calendar,Green
+AC/OGRN,Annual Calendar,Olive Green
+AC/DGRN,Annual Calendar,Dark Green
+AC/LBLU,Annual Calendar,Light Blue
+AC/BBLU,Annual Calendar,Bright Blue
+AC/BLU,Annual Calendar,Blue
+AC/DBLU,Annual Calendar,Dark Blue
+AC/LPRP,Annual Calendar,Light Purple
+AC/PRP,Annual Calendar,Purple
+AC/DPRP,Annual Calendar,Dark Purple
+AC/WHT,Annual Calendar,White
+AC/SIL,Annual Calendar,Silver
+AC/GRY,Annual Calendar,Gray
+AC/WG,Annual Calendar,White Gold
+AC/YG,Annual Calendar,Yellow Gold
+AC/RG,Annual Calendar,Rose Gold
+AC/BRN,Annual Calendar,Brown
+AC/BLK,Annual Calendar,Black
+SMART,Smart,
+OPEN,Open Heart,
+BEL,Bel Canto,
